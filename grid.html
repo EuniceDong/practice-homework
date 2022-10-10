@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .main-navigation{
+            background-color: beige;
+        }
+        .div2{
+            display: grid;
+            width:600px ;
+            height: 600;
+            border: 5px solid gray;
+            grid-template-rows: 200px 200px 200px ;
+            grid-template-columns: 200px 200px 200px ;
+            
+        }
+        span{
+            border: 1px solid black;
+            background-color: aqua;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+           <!-- navigation -->
+           <nav class="main-navigation">
+            <ul>
+                <a href="index.html">home</a>
+                <a href="SEO.html">SEO</a>
+                <a href="grid.html">Grid</a>
+                <a href="box.html">box</a>
+                <a href="list.html">font-size</a>
+                <a href="position.html">position</a>
+
+            </ul>
+        </nav>
+    </div>
+        <div class="div2" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> 
+    </div>
+</body>
+</html>

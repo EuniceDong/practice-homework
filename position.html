@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+       body{
+        position: absolute;
+       }
+        .main-navigation{
+            background-color: antiquewhite;
+        }
+        .footer{
+            position: relative;
+            top: 700;
+            font-size: 5px;
+            text-align: center;
+            background-color: burlywood;
+        }
+        .content{
+            border: 1px solid black;
+            width: 1600px;
+            height: 800px;
+            display: grid;
+            grid-template-rows: (4,20%);
+            grid-template-columns: 100%;
+        }
+        .content div{
+            border: 1px solid black;
+           
+        }
+    </style>
+</head>
+<body>  
+    <div class="wrapper">
+          <!-- navigation -->
+          <nav class="main-navigation">
+            <ul>
+                <a href="index.html">home</a>
+                <a href="SEO.html">SEO</a>
+                <a href="grid.html">Grid</a>
+                <a href="box.html">box</a>
+                <a href="list.html">font-size</a>
+                <a href="position.html">position</a>
+
+            </ul>
+        </nav>
+        <!-- content -->
+        <div class="content">
+            <div>
+                <div style="position:static; border:3px solid #73AD21;">This element uses: static position; </div>
+            </div>
+            <div> 
+                <h2 style="position:absolute; left:650px; top:250px;">This is an absolute title</h2>
+                <p>With absolute positioning, an element can be placed anywhere on the page. Place an element 650 px from the left page and 250 px from the top of the page under the heading.</p></div>
+                <div><p style="position:fixed; top:30px; right:5px;">Fixed Position</p><div>
+                <p>Fixed position</p><p>Fixed position</p><p>Fixed position</p><p>Fixed position</p><p>Fixed position</p><p>Fixed position</p><p>Fixed position</p><p>Fixed position</p></div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <small style="position: relative; top:30px; right:20px; font-size:large; color:blue">&copy;Footer: relative location</small>
+        </div>
+</body>
+</html>
